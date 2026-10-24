@@ -1,0 +1,14 @@
+[
+	{
+		"name": "victora road henesys",
+		"monsters": [],
+		"npcs": ["maple administrator", "regular cab", "rina", "community board jay", "chief stan", "bianca housing registrar", "doorbell", "mrs. ming ming", "bruce", "camila"],
+		"leads_to": ["victoria road henesys hunting ground I", "victoria road henesys town hall", "victoria road henesys market", "victoria road henesys park", "victoria road henesys townstreet", "victoria road the hill east of henesys", "warning street", "the road to the dungeon"]
+	},
+	{
+		"name": "victora road henesys town hall",
+		"monsters": [],
+		"npcs": ["raymond town general store", "flint town scroll shop", "oak town furnishings", "tommy estate agent", "arthur town clerk"],
+		"leads_to": ["victora road henesys"]
+	}
+]
