@@ -1,21 +1,18 @@
 
-import json
-from pathlib import Path
-
 
 class Location:
-    def __init__(self, npcs, monsters, leads_to):
-        
+    def __init__(self, name, npcs, monsters, leads_to):
+
+        self.name = name
         self.npcs = npcs
         self.monsters = monsters
         self.leads_to = leads_to
 
+    def __hash__(self):
+        return hash(self.name)
 
-def load_locations_from_database():
+    def __eq__(self, value):
+        return self.name == value.name
 
-    database_file = Path(__file__).parent / "locations_data.json" 
-    with open(database_file.resolve()) as database_file_handle:
-        data = json.load(database_file_handle)
-
-    return data
-
+    def __repr__(self):
+        return self.name
